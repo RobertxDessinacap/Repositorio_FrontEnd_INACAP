@@ -1,46 +1,46 @@
-body{background-color: rgb(0, 0, 0);
+body{background-color: rgb(0, 0, 0); /* Cambia el color del fondo a negro */
 }
-.Roberto h1{
-    color: rgb(255, 255, 255);
-    width: 100% ; height: 60px; 
-    text-align: center;
-    font-family: "Monoton";
-    font-size:100px;
-    margin-bottom: 100px;
+.Roberto h1{ /* Cambia el estilo del h1 */
+    color: rgb(255, 255, 255); /* Cambia el color de las letras */
+    width: 100% ; height: 60px;  /* Ocupa el 100% del ancho de la pagina */
+    text-align: center; /* Centra el texto */
+    font-family: "Monoton"; /* Cambia la fuente del h1 a la fuente "Monoton" */
+    font-size:100px;  /* Cambia el tamaño de la fuente */
+    margin-bottom: 100px; /* Genera un espacio por debajo de h1 de 100 pixeles */
 
 }
 
 
-.imagen_roberto img{
-    position: relative;
-    filter: drop-shadow(1px 1px 25px rgb(255, 255, 255));
-    width: auto;
-    height: 1950px;
+.imagen_roberto img{ /* Cambia el estilo de la imagen */
+    position: relative; /* Ajusta la posicion segun el ancho de la pantalla */
+    filter: drop-shadow(1px 1px 25px rgb(255, 255, 255)); /* Genera una sombra billante al rededor de la imagen */
+    width: auto; /* cambia el ancho automaticamente respecto a la altura de la imagen */
+    height: 1950px; /* altura de la imagen */
 }
 .imagen_roberto {
-    text-align: right;
-    margin-right: 10px;
-    position: absolute;
-    right:0;
+    text-align: right; /* Alinea el contenedor a la derecha */
+    margin-right: 10px; /* Genera un espacio de 10 pixeles a la derecha */
+    position: absolute; /* Ubicacion fija en la apgina */
+    right:0; /* Posiciona el contenedor de la imagen a la derecha */
 
 }
 
 .cuadro1 {
     position: relative;
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(255, 255, 255); /* Cambia el fondo del div */ 
     height: 1100px; 
     width: 810px;
-    margin-left: 280px;
-    border-radius: 10%;
-    margin-top: 280px;
-    z-index: -1;
+    margin-left: 280px; /* Genera un espacio a la izquierda */
+    border-radius: 10%; /* Redondea los bordes del div */
+    margin-top: 280px; /* Genera un espacio en la parte superior */
+    z-index: -1; /* Ubica el elemento de detras de todos los demás */
 }
 
 .SobreMi h2{
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0); 
     font-size: 80px;
     margin-left: 100px;
-    padding-top: 50px;
+    padding-top: 50px; /* Espacio superior de 50 pixeles */
 }
 .info-lista {
     list-style: none; /* Quitar los puntos de la lista */
@@ -52,30 +52,30 @@ body{background-color: rgb(0, 0, 0);
     padding: 40px;
     margin: 30px;
     border-radius: 10px; /* Bordes redondeados */
-    font-size: 25px;
+    font-size: 25px; /* Cambio de tamaño de la fuente */
     color: rgb(0, 0, 0); /* Texto blanco */
 }
 
 .Botones {
-    display: flex;
-    justify-content: left;
+    display: flex; /* Organiza los botones en fila */
+    justify-content: left; /* Alinea los botones a la izquierda */
     gap: 30px; 
     margin-top: 170px;
 }
 
 .botoncancion {
-    filter: drop-shadow(1px 1px 15px white);
+    filter: drop-shadow(1px 1px 15px white); /* Genera una sombra blanca */
     position: relative;
-    background-color: rgb(20, 20, 20);
-    color: rgb(255, 255, 255);
+    background-color: rgb(20, 20, 20); /* Cambia el fondo del botón */
+    color: rgb(255, 255, 255); /* Cambia el color de texto */
     width: 250px;
     height: 150px;
     margin-left: 350px;
-    border: 1px solid #ffffff;
+    border: 1px solid #ffffff; /* Genera un borde al botón */
     font-family: sans-serif;
     font-size: 30px;
     border-radius: 50px;
-    cursor: pointer;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
 
@@ -97,9 +97,9 @@ body{background-color: rgb(0, 0, 0);
 .Volver {
     position: relative;
     margin-top: 350px;
-    left: 50%;
-    background: none;
-    border: none;
+    left: 50%; /* Centra el botón */
+    background: none; /* Le quita el fondo al botón */
+    border: none; /* Le quira el borde al botón */
     font-size: 18px;
     color: white;
     cursor: pointer;
