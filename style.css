@@ -12,41 +12,95 @@ body{background-color: rgb(0, 0, 0);
 
 
 .imagen_roberto img{
+    position: relative;
     filter: drop-shadow(1px 1px 25px rgb(255, 255, 255));
-    width: 60%;
-    height: auto;
+    width: auto;
+    height: 1950px;
 }
 .imagen_roberto {
     text-align: right;
+    margin-right: 10px;
     position: absolute;
-    right: 0;
+    right:0;
 
 }
 
 .cuadro1 {
+    position: relative;
     background-color: rgb(255, 255, 255); 
-    height: 900px; 
-    width: 700px;
-    margin-left: 170px;
+    height: 1100px; 
+    width: 810px;
+    margin-left: 280px;
     border-radius: 10%;
-    margin-top: 200px;
+    margin-top: 280px;
+    z-index: -1;
 }
 
 .SobreMi h2{
     color: rgb(0, 0, 0);
+    font-size: 80px;
     margin-left: 100px;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .info-lista {
     list-style: none; /* Quitar los puntos de la lista */
-    padding: 0;
+    padding: 1;
 }
 
 .info-lista li {
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo ligero */
-    padding: 10px;
-    margin: 5px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 30px;
     border-radius: 10px; /* Bordes redondeados */
-    font-size: 18px;
+    font-size: 25px;
     color: rgb(0, 0, 0); /* Texto blanco */
+}
+
+.Botones {
+    display: flex;
+    justify-content: left;
+    gap: 30px; 
+    margin-top: 170px;
+}
+
+.botoncancion {
+    filter: drop-shadow(1px 1px 15px white);
+    position: relative;
+    background-color: rgb(20, 20, 20);
+    color: rgb(255, 255, 255);
+    width: 250px;
+    height: 150px;
+    margin-left: 350px;
+    border: 1px solid #ffffff;
+    font-family: sans-serif;
+    font-size: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+.botonPyme {
+    filter: drop-shadow(1px 1px 15px white);
+    position: relative;
+    background-color: rgb(20, 20, 20);
+    color: rgb(255, 255, 255);
+    width: 250px;
+    height: 150px;
+    margin-left: 150px;
+    border: 1px solid #ffffff;
+    font-family: sans-serif;
+    font-size: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.Volver {
+    position: relative;
+    margin-top: 350px;
+    left: 50%;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
 }
