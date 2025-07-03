@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Obtener valores
         const nombre = document.getElementById('nombre').value;
         const apellido = document.getElementById('apellido').value;
-        const email = document.getElementById('email').value;
+        const email = document.getElementById('email').value.trim();
         const motivo = document.getElementById('motivo').value;
         
         

@@ -16,13 +16,14 @@ body{background-color: rgb(0, 0, 0); /* Cambia el color del fondo a negro */
     filter: drop-shadow(1px 1px 25px rgb(255, 255, 255)); /* Genera una sombra billante al rededor de la imagen */
     width: auto; /* cambia el ancho automaticamente respecto a la altura de la imagen */
     height: 1950px; /* altura de la imagen */
+    z-index: -1;
 }
 .imagen_roberto {
     text-align: right; /* Alinea el contenedor a la derecha */
     margin-right: 10px; /* Genera un espacio de 10 pixeles a la derecha */
     position: absolute; /* Ubicacion fija en la apgina */
     right:0; /* Posiciona el contenedor de la imagen a la derecha */
-
+    z-index: -1;
 }
 
 .cuadro1 {
@@ -33,7 +34,7 @@ body{background-color: rgb(0, 0, 0); /* Cambia el color del fondo a negro */
     margin-left: 280px; /* Genera un espacio a la izquierda */
     border-radius: 10%; /* Redondea los bordes del div */
     margin-top: 280px; /* Genera un espacio en la parte superior */
-    z-index: -1; /* Ubica el elemento de detras de todos los demás */
+    z-index: -2; /* Ubica el elemento de detras de todos los demás */
 }
 
 .SobreMi h2{
@@ -104,7 +105,7 @@ body{background-color: rgb(0, 0, 0); /* Cambia el color del fondo a negro */
 
 .Volver {
     position: relative;
-    margin-top: 350px;
+    margin-top: 100px;
     left: 50%; /* Centra el botón */
     background: none; /* Le quita el fondo al botón */
     border: none; /* Le quira el borde al botón */
@@ -118,10 +119,9 @@ body{background-color: rgb(0, 0, 0); /* Cambia el color del fondo a negro */
     text-align: center;
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
-/* Estilos para el formulario de contacto */
 /* Estilos para el formulario de contacto */
 .ContenerdorContacto {
     margin-top: 50px;
@@ -130,7 +130,7 @@ body{background-color: rgb(0, 0, 0); /* Cambia el color del fondo a negro */
 }
 
 .btn-contacto {
-    margin-top: 1000px;
+    margin-top: 200px;
     background-color: #20b2aa;
     color: white;
     border: none;
@@ -146,6 +146,7 @@ body{background-color: rgb(0, 0, 0); /* Cambia el color del fondo a negro */
     background-color: #1e9c96;
     transform: scale(1.05);
 }
+
 
 
 .formulario-oculto {  /* Animación de despliegue */
