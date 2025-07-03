@@ -75,9 +75,12 @@ body{background-color: rgb(0, 0, 0); /* Cambia el color del fondo a negro */
     font-family: sans-serif;
     font-size: 30px;
     border-radius: 50px;
+    transition: all 0.5s ease;
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
-
+.botoncancion:hover {
+    transform: scale(1.05);
+}
 
 .botonPyme {
     filter: drop-shadow(1px 1px 15px white);
@@ -90,8 +93,13 @@ body{background-color: rgb(0, 0, 0); /* Cambia el color del fondo a negro */
     border: 1px solid #ffffff;
     font-family: sans-serif;
     font-size: 30px;
+    transition: all 0.5s ease;
     border-radius: 50px;
     cursor: pointer;
+}
+
+.botonPyme:hover{
+    transform: scale(1.05);
 }
 
 .Volver {
@@ -113,5 +121,111 @@ body{background-color: rgb(0, 0, 0); /* Cambia el color del fondo a negro */
     margin-top: 20px;
 }
 
+/* Estilos para el formulario de contacto */
+/* Estilos para el formulario de contacto */
+.ContenerdorContacto {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.btn-contacto {
+    margin-top: 1000px;
+    background-color: #20b2aa;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.btn-contacto:hover {
+    background-color: #1e9c96;
+    transform: scale(1.05);
+}
 
 
+.formulario-oculto {  /* Animación de despliegue */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.formulario-visible {
+    max-height: 800px;
+    opacity: 1;
+    padding: 30px;
+}
+
+.CampoFormulario {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.CampoFormulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.CampoFormulario input,
+.CampoFormulario textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.CampoFormulario textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn-enviar {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Mensaje de éxito simple */
+
+
+.mensaje-exito-visible {
+    display: block;
+    color: #28a745; /* Verde sólido */
+    background-color: rgba(40, 167, 69, 0.1);
+    border-radius: 5px;
+}
+
+/* Validación visual */
+input:invalid, textarea:invalid {
+    border-color: #ff6b6b;
+}
+
+input:valid, textarea:valid {
+    border-color: #51cf66;
+}

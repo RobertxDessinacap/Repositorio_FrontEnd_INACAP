@@ -34,6 +34,36 @@
             </button> <!-- Boton con letras negritas que lleva a la Pyme donde trabajo -->
         </div>
         <script src="script.js"></script>
+    
+
+
+
+    <div class="ContenerdorContacto">
+        <button id="mostrarFormulario" class="btn-contacto">¿Quieres contactarme? Haz click aquí</button>
+        <div id="mensajeExito" class="mensaje-exito-oculto"></div>
+        <div id="formularioContacto" class="formulario-oculto">
+            <h3>Formulario de Contacto</h3>
+            <form id="contactForm">
+                <div class="CampoFormulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="CampoFormulario">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" required>
+                </div>
+                <div class="CampoFormulario">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="CampoFormulario">
+                    <label for="motivo">Motivo de contacto:</label>
+                    <textarea id="motivo" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">ENVIAR</button>
+            </form>
+        </div>
+    </div>
     </body>
     <foot>
         <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="Volver">Volver arriba</button>  <!-- Un boton que lleva al inicio de la pagina con un desplazamiento suave -->
