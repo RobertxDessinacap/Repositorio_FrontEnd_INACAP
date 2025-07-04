@@ -35,11 +35,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function guardarContacto(nombre, apellido, email, motivo) {
         contactos.push({
+            fecha: new Date().toLocaleString(),
             nombre,
             apellido,
             email,
-            motivo,
-            fecha: new Date().toLocaleString()
+            motivo
+            
         });
         console.log("Contactos guardados:", contactos); // Para verificación
     }
