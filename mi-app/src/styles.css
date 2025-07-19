@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+/* Cambia el color del fondo a negro */
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+/* Cambia el estilo del h1 */
+.Roberto h1{
+    color: rgb(255, 255, 255); /* Cambia el color de las letras */
+    width: 100%; height: 60px; /* Ocupa el 100% del ancho de la página */
+    text-align: center; /* Centra el texto */
+    font-family: "Monoton"; /* Cambia la fuente del h1 a la fuente "Monoton" */
+    font-size: 100px; /* Cambia el tamaño de la fuente */
+    margin-bottom: 100px; /* Genera un espacio por debajo de h1 de 100 pixeles */
+}
+
+/* Cambia el estilo de la imagen */
+.imagen_roberto img{
+    position: relative; /* Ajusta la posición según el ancho de la pantalla */
+    filter: drop-shadow(1px 1px 25px rgb(255, 255, 255)); /* Genera una sombra brillante alrededor de la imagen */
+    width: auto; /* cambia el ancho automáticamente respecto a la altura de la imagen */
+    height: 1950px; /* altura de la imagen */
+    z-index: -1;
+}
+.imagen_roberto{
+    text-align: right; /* Alinea el contenedor a la derecha */
+    margin-right: 10px; /* Genera un espacio de 10 pixeles a la derecha */
+    position: absolute; /* Ubicación fija en la página */
+    right: 0; /* Posiciona el contenedor de la imagen a la derecha */
+    z-index: -1;
+}
+
+/* Cambia el fondo del div */
+.cuadro1{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 1100px;
+    width: 810px;
+    margin-left: 280px; /* Genera un espacio a la izquierda */
+    border-radius: 10%; /* Redondea los bordes del div */
+    margin-top: 280px; /* Genera un espacio en la parte superior */
+    z-index: -2; /* Ubica el elemento detrás de todos los demás */
+}
+
+.SobreMi h2{
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+    margin-left: 100px;
+    padding-top: 50px; /* Espacio superior de 50 pixeles */
+}
+.info-lista{
+    list-style: none; /* Quitar los puntos de la lista */
+    padding: 1;
+}
+.info-lista li{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 30px;
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 25px; /* Cambio de tamaño de la fuente */
+    color: rgb(0, 0, 0); /* Texto negro */
+}
+
+/* Organiza los botones en fila */
+.Botones{
+    display: flex;
+    justify-content: left; /* Alinea los botones a la izquierda */
+    gap: 30px;
+    margin-top: 170px;
+}
+
+/* Genera una sombra blanca */
+.botoncancion{
+    filter: drop-shadow(1px 1px 15px white);
+    position: relative;
+    background-color: rgb(20, 20, 20); /* Cambia el fondo del botón */
+    color: rgb(255, 255, 255); /* Cambia el color de texto */
+    width: 250px;
+    height: 150px;
+    margin-left: 350px;
+    border: 1px solid #ffffff; /* Genera un borde al botón */
+    font-family: sans-serif;
+    font-size: 30px;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+.botoncancion:hover{
+    transform: scale(1.05);
+}
+
+.botonPyme{
+    filter: drop-shadow(1px 1px 15px white);
+    position: relative;
+    background-color: rgb(20, 20, 20);
+    color: rgb(255, 255, 255);
+    width: 250px;
+    height: 150px;
+    margin-left: 150px;
+    border: 1px solid #ffffff;
+    font-family: sans-serif;
+    font-size: 30px;
+    transition: all 0.5s ease;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.botonPyme:hover{
+    transform: scale(1.05);
+}
+
+/* Centra el botón */
+.Volver{
+    position: relative;
+    margin-top: 100px;
+    left: 50%; /* Centra el botón */
+    background: none; /* Le quita el fondo al botón */
+    border: none; /* Le quita el borde al botón */
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+#Bienvenida{
+    filter: drop-shadow(1px 1px 15px white);
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 25px;
+}
+
+/*  FORMULARIO DE CONTACTO  */
+
+.ContenerdorContacto{
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.btn-contacto{
+    filter: drop-shadow(1px 1px 15px white);
+    margin-top: 200px;
+    background-color: #20b2aa;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+.btn-contacto:hover{
+    background-color: #1e9c96;
+    transform: scale(1.05);
+}
+
+/* bloque único del formulario */
+.formulario-estilos{
+    filter: drop-shadow(1px 1px 15px white);
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 0 30px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.formulario-estilos.abierto{
+    max-height: 800px;
+    opacity: 1;
+    padding: 30px;
+}
+
+.CampoFormulario{
+    margin-bottom: 20px;
+    text-align: left;
+}
+.CampoFormulario label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+.CampoFormulario input,
+.CampoFormulario textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.CampoFormulario textarea{
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn-enviar{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-enviar:hover{
+    transform: scale(1.05);
+}
+
+.mensaje-exito-visible{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #28a745;
+    filter: drop-shadow(1px 1px 15px white);
+    border-radius: 5px;
+}
+
+/* validación visual */
+input:invalid,
+textarea:invalid{
+    border-color: #ff0000;
+    filter: drop-shadow(1px 1px 15px #eb5555);
+}
+input:valid,
+textarea:valid{
+    border-color: #51cf66;
+}
+
+/* Contenedor fijo en esquina superior-izquierda */
+.react-corner {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Logo giratorio */
+.react-logo {
+    width: 80px;
+    height: 80px;
+    animation: spin 4s linear infinite;
+}
+
+/* Frase debajo del logo */
+.react-corner p {
+    margin: 4px 0 0;
+    color: #61dafb;
+    font-family: "Monoton", sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
